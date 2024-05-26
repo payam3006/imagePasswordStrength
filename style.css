@@ -1,0 +1,81 @@
+:root {
+  /*use 100vh for mobile responsive
+COP!!!*/
+  --doc-height: 100%;
+}
+
+body {
+  /*use 100vh for mobile responsive
+COP!!!*/
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
+
+  /* How TO - Disable Text Selection */
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-size: larger;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  /* color: white; */
+}
+/* prevent Refresh on touchDown */
+body {
+  overscroll-behavior: contain;
+}
+
+.main {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background-image: url("home.webp");
+  background-position: center;
+  background-size: cover;
+  filter: blur(20px);
+}
+
+form {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 30vmax;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  margin-bottom: 0;
+  text-align: center;
+}
+h4 {
+  text-align: center;
+  margin-top: 5px;
+}
+label {
+  width: 100%;
+}
+input {
+  margin: 10px 0 20px 0;
+  height: 30px;
+  border: 1px solid gray;
+}
+button {
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+  border: none;
+  height: 30px;
+}
